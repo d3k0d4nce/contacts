@@ -161,6 +161,8 @@ fun ContactsScreen() {
     LaunchedEffect(Unit) {
         if (hasPermission) {
             loadContacts()
+        } else {
+            permissionLauncher.launch(Manifest.permission.READ_CONTACTS)
         }
     }
 
