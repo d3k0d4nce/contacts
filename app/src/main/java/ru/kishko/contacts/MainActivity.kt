@@ -234,7 +234,7 @@ fun ContactsScreen() {
                         Spacer(modifier = Modifier.height(12.dp))
 
                         if (contacts.isEmpty()) {
-                            Text("Список контактов пуст.")
+                            Text("No contacts found")
                         } else {
                             LazyColumn(
                                 verticalArrangement =
